@@ -1,0 +1,18 @@
+
+<h1 style={{colorStyle}}>Welcome to Ember, {{model.name}}!!!</h1>
+
+{{someInformation}}<br>
+
+<br><form {{action "updateName" newName on="submit"}}>
+  <label>What's your name?</label>
+  {{input value=newName}}
+  <button> Submit </button>
+</form>
+
+<form {{action "updateColor" newColor on="submit"}}>
+  <label>What color should I be?</label>
+  {{input value=newColor}}
+  <button> Submit </button>
+</form>
+
+{{outlet}}
