@@ -1,1 +1,9 @@
+<h3>This is where your friends go!</h3>
+
+<ul>
+{{#each model as |friend|}}
+  <li>{{friend.name}} likes {{friend.color}}.</li>
+{{/each}}
+</ul>
+
 {{outlet}}

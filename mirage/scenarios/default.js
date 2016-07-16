@@ -1,5 +1,5 @@
 export default function(server) {
-  server.create('user');
+  server.createList('user', 5);
 
   /*
     Seed your development database using your factories.

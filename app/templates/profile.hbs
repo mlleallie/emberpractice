@@ -3,6 +3,10 @@
 
 {{someInformation}}<br>
 
+{{#link-to 'profile.friends'}}
+  See yo homies
+{{/link-to}}
+
 <br><form {{action "updateName" newName on="submit"}}>
   <label>What's your name?</label>
   {{input value=newName}}
